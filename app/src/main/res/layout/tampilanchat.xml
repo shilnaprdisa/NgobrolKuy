@@ -113,7 +113,7 @@
                         android:textSize="6pt"
                         android:fontFamily="@font/redhatdisplay_regular"
                         android:textColor="@color/white"
-                        android:layout_marginLeft="8pt"
+                        android:layout_marginLeft="8pt "
                         />
                 </LinearLayout>
                 <TextView
