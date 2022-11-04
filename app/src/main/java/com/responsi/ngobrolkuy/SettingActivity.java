@@ -41,14 +41,7 @@ public class SettingActivity extends AppCompatActivity {
         nama = findViewById(R.id.usernametext);
         email = findViewById(R.id.emailtext);
         password = findViewById(R.id.passtext);
-        String usname = getIntent().getExtras().getString("username");
-        String pass = getIntent().getExtras().getString("password");
 
-
-
-        nama.setText(usname);
-        password.setText(pass);
-        email.setText(usname +"@email.com");
         /*mundur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -79,7 +72,7 @@ public class SettingActivity extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_CANCELED){
-            Toast.makeText(this, "     Batal mengambil gambar     ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "   Batal mengambil gambar   ", Toast.LENGTH_SHORT).show();
             return;
         } else {
             if (requestCode == GALLERY_REQUEST_CODE){
